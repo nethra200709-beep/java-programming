@@ -6,7 +6,7 @@ class Student {
     int age;
     String department;
 
-    // Constructor
+    
     Student(String a, int b, int c, String d) {
         name = a;
         register = b;
@@ -27,7 +27,7 @@ class Mark extends Student {
     float average;
     String result;
 
-    // Constructor with super
+    
     Mark(String name, int register, int age, String department,
          int m1, int m2, int m3) {
 
@@ -39,7 +39,7 @@ class Mark extends Student {
 
     void calculate() {
         total = mark1 + mark2 + mark3;
-        average = total / 3.0f;
+        average = total / 3;
 
         if (mark1 >= 40 && mark2 >= 40 && mark3 >= 40) {
             result = "Pass";
@@ -87,6 +87,7 @@ public class Details {
         mar.disp1();
         mar.disp2();
 
-        sc.close();
+        
     }
+
 }
