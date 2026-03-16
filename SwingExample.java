@@ -7,25 +7,23 @@ public class SwingExample {
 
         JFrame f = new JFrame("Swing Components Example");
 
-        // JLabel
+        
         JLabel l = new JLabel("Enter Text:");
 
-        // JTextField
+
         JTextField tf = new JTextField(15);
 
-        // JTextArea
+    
         JTextArea ta = new JTextArea(5,20);
 
-        // JScrollPane
+        
         JScrollPane sp = new JScrollPane(ta);
 
-        // JButton
         JButton b = new JButton("Add");
 
-        // JToggleButton
         JToggleButton tb = new JToggleButton("ON/OFF");
 
-        // Layout
+    
         f.setLayout(new FlowLayout());
 
         f.add(l);
@@ -34,7 +32,7 @@ public class SwingExample {
         f.add(tb);
         f.add(sp);
 
-        // Button action
+        
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ta.append(tf.getText() + "\n");
@@ -42,7 +40,7 @@ public class SwingExample {
             }
         });
 
-        // Toggle button action
+    
         tb.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 if(tb.isSelected())
